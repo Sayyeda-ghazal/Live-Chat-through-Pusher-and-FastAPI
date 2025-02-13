@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Chat</title>
+
+    <script src="https://js.pusher.com/7.0/pusher.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', path='css/styles.css') }}">
+</head>
+<body>
+    
+    <div class="container1">
+        <h1>Real-Time Chat with Pusher and FastAPI</h1>
+        <div id="sentMessages" class="message-container"></div>
+        <br>
+
+        <label for="username">Enter your username:</label><br>
+        <input type="text" id="usernameInput" placeholder="Your username" autofocus>
+        <br><br>
+
+        <input type="text" id="messageInput" placeholder="Type a message..."><br>
+        <button onclick="sendMessageAndSaveUsername()">Send</button>
+    </div>
+
+    <script src="{{ url_for('static', path='js/ws.js') }}"></script>
+</body>
+</html>

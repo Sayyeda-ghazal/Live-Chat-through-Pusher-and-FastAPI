@@ -1,0 +1,62 @@
+.html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;  
+    align-items: center;   
+    background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container1 {
+    background: rgba(0, 0, 0, 0.7);  
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;     
+}
+
+.message-container {
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: scroll; 
+    width: 100%;
+    text-align: left; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    scrollbar-width: thin; 
+    scrollbar-color: transparent transparent; 
+}
+
+.input, button {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    width: 90%; 
+    max-width: 400px; 
+}
+
+.button {
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #0056b3;
+}
+
+.input:focus, button:focus {
+    outline: none;
+}
+
