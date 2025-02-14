@@ -1,10 +1,5 @@
-from pathlib import Path
-from dotenv import load_dotenv
-from urllib.parse import quote_plus
 from pydantic_settings import BaseSettings
-import os
 
-from typing import ClassVar
 
 
 class Settings(BaseSettings):
